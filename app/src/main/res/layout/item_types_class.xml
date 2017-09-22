@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItem"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="10dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_item_class_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_item_def_collect" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#4fa6a6a6">
+
+        <TextView
+            android:id="@+id/tv_item_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:tag="@string/type_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            tools:text="名字" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:clickable="true"
+              android:foreground="?android:selectableItemBackground"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <include layout="@layout/lineview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_item_conplan_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"/>
+
+        <TextView
+            android:id="@+id/tv_item_conplan_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="subtitle"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_conplan_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="content"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/lineview"/>
+</LinearLayout>

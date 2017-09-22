@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/item_style_with_foreg"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_item_class_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"
+            tools:text="名字"/>
+
+        <TextView
+            android:id="@+id/tv_download_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/radios_bg_blue_solid_btn"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="下载"
+
+            android:textSize="@dimen/text_size_12"/>
+
+    </RelativeLayout>
+</LinearLayout>

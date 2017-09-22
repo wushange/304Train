@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/defult_bg"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.connxun.train.widget.AppTitle
+            style="@style/title_style"
+            app:centreText="设置"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <include layout="@layout/lineview"/>
+
+    <RelativeLayout
+        style="@style/item_style_with_foreg">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="夜间模式"
+            android:textSize="@dimen/text_size_16"/>
+
+
+        <Switch
+            android:id="@+id/sw_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/lineview"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+        style="@style/item_style_with_foreg">
+
+        <include layout="@layout/lineview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textSize="@dimen/text_size_16"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@mipmap/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <include layout="@layout/lineview"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_help"
+        style="@style/item_style_with_foreg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="使用帮助"
+            android:textSize="@dimen/text_size_16"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@mipmap/ic_right_arrow"/>
+    </RelativeLayout>
+
+    <include layout="@layout/lineview"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_exit"
+        style="@style/item_style_with_foreg"
+        android:orientation="vertical">
+
+        <include layout="@layout/lineview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="退出登录"
+            android:textColor="#fc4a46"
+            android:textSize="@dimen/text_size_16"/>
+
+        <include layout="@layout/lineview"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.connxun.train">
+
+    <uses-sdk tools:overrideLibrary="fm.jiecao.jcvideoplayer_lib"/>
+
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="cn.connxun.train.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="cn.connxun.train.ui.splash.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.connxun.train.ui.login.LoginActivity"/>
+
+        <activity android:name="cn.connxun.train.ui.setting.AboutActivity"/>
+        <activity android:name="cn.connxun.train.ui.setting.HelpActivity"/>
+        <activity
+            android:name="cn.connxun.train.ui.classdetail.ClassDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity
+            android:name="cn.connxun.train.ui.main.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name="cn.connxun.train.ui.filepreview.FilePreviewActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="cn.connxun.train.ui.base.WebActivity"/>
+
+        <activity android:name=".ui.home.HomeSearchActivity"/>
+        <activity android:name="cn.connxun.train.ui.regist.RegistActivity"/>
+        <activity android:name="cn.connxun.train.ui.web.WebviewActivity"/>
+        <activity android:name=".ui.download.DownloadAllActivity"/>
+        <activity android:name=".ui.home.HomeCFActivity"/>
+        <activity android:name=".ui.home.HomeHot_New_SpcActivity"/>
+        <activity android:name=".ui.home.ClassListActivity"/>
+        <activity android:name=".ui.home.HomeBroseHistoryActivity"/>
+
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.connxun.train.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

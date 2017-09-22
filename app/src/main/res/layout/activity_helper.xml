@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.connxun.train.widget.AppTitle
+            style="@style/title_style"
+            app:canFinish="true"
+            app:centreText="使用帮助"
+            app:showBack="true" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="热点问题" />
+
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/qlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--<RelativeLayout-->
+    <!--style="@style/item_style_with_foreg">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="10dp"-->
+    <!--android:textSize="@dimen/text_size_16"-->
+    <!--android:text="你未发现的小功能"/>-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@mipmap/ic_right_arrow"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<include layout="@layout/lineview"/>-->
+    <!--<RelativeLayout-->
+    <!--style="@style/item_style_with_foreg">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="10dp"-->
+    <!--android:textSize="@dimen/text_size_16"-->
+    <!--android:text="培训视频如何下载"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@mipmap/ic_right_arrow"/>-->
+    <!--</RelativeLayout>-->
+    <!--<include layout="@layout/lineview"/>-->
+    <!--<RelativeLayout-->
+    <!--style="@style/item_style_with_foreg">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="10dp"-->
+    <!--android:textSize="@dimen/text_size_16"-->
+    <!--android:text="退出账号登录方法"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:src="@mipmap/ic_right_arrow"/>-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>

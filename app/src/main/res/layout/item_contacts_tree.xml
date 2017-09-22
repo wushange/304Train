@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:minHeight="40dip">
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/ic_tree_ec"/>
+
+    <TextView
+        android:id="@+id/id_treenode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/id_treenode_icon"
+        android:text="@string/app_name"
+        android:textSize="18dip"/>
+
+    <TextView
+        android:id="@+id/tv_treenode_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/id_treenode_label"
+        android:textSize="14dip"
+        tools:text="18888888888"/>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/item_style_with_foreg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/item_contacts_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:minEms="3"
+            android:text="用户名"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/item_contacts_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="88888888"
+            android:textColor="#9b9b9b"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

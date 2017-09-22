@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="ripple_bg">?android:attr/selectableItemBackground</color>
+
+    <color name="defult_bg">#fafafa</color>
+    <color name="app_color">#0065b3</color>
+    <color name="title_normal">#b1b1b1</color>
+    <color name="title_selected">#114082</color>
+    <color name="checking">#6cc955</color>
+    <color name="nocheck">#ff8f44</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transo">#0f000000</color>
+    <color name="text_dark">#a6a6a6</color>
+    <color name="default_color">#f7f7f7</color>
+    <color name="edit_text">@color/black</color>
+    <color name="edit_hint_text">#ffacacac</color>
+    <color name="grid_itemdecoration">#267cbe</color>
+</resources>

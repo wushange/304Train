@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              style="@style/item_style_with_foreg"
+              android:layout_width="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_item_taskallot_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        tools:text="用户名"/>
+</LinearLayout>

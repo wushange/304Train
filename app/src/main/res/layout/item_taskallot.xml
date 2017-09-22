@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/listItem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="15dp"
+                                    android:clickable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    card_view:cardCornerRadius="3dp"
+                                    card_view:cardElevation="3dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_task_name"
+            style="@style/item_style_with_foreg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="任务名称"/>
+
+            <TextView
+                android:id="@+id/tv_taskallot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                tools:text="哈哈哈"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/lineview"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_task_time"
+            style="@style/item_style_with_foreg">
+
+            <TextView
+                android:id="@+id/tv_task_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="巡检时间"/>
+
+
+            <TextView
+                android:id="@+id/tv_task_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img"
+                android:layout_toRightOf="@id/tv_task_time_title"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_right_arrow"/>
+        </RelativeLayout>
+
+        <include layout="@layout/lineview"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_task_person"
+            style="@style/item_style_with_foreg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="任务人"/>
+
+            <TextView
+                android:id="@+id/tv_taskallot_aname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                tools:text="哈哈哈"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_right_arrow"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
